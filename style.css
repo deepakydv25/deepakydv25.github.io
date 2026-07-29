@@ -204,6 +204,7 @@ h1, h2 {
 
 .contact-card {
   padding: 0;
+  margin-bottom: 100px;
   background: transparent;
   border: none;
   border-radius: 0;
