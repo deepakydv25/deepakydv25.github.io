@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
 :root{color-scheme:light;--bg:#FFF7E5;--text:#19192B;--muted:#55545B;--link:#173FA2;--line:#DDD5C4;--chip:#F0DFC0}
-:root[data-theme=dark]{color-scheme:dark;--bg:#171a20;--text:#ecebe6;--muted:#b0b4be;--link:#91baff;--line:#41454e;--chip:#30343c}
+:root[data-theme=dark]{color-scheme:dark;--bg:#211b16;--text:#f5ecdc;--muted:#c4b6a2;--link:#a9c3ff;--line:#504538;--chip:#5c4932}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--text);font:16px/1.8 'DM Sans',system-ui,sans-serif}
@@ -17,6 +17,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--link);outline-offse
 .theme-switch button{border:0;background:transparent;color:var(--muted);width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:17px;line-height:1;display:inline-flex;align-items:center;justify-content:center}
 .theme-switch button svg{display:block}
 .theme-switch button[aria-pressed=true]{background:var(--chip);color:var(--text)}
+.theme-switch button[aria-pressed=true]:focus{outline:none}
+.theme-switch button:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+.theme-switch button:not([aria-pressed=true]):hover{background:var(--chip)}
+.theme-switch button{-webkit-tap-highlight-color:transparent}
+.theme-switch button[aria-pressed=true] svg{stroke:currentColor}
 main{min-height:65vh}
 h1,h2,h3{font-family:'Libre Baskerville',Georgia,serif;line-height:1.4;letter-spacing:-.035em}
 h1{font-size:clamp(32px,5vw,44px);margin:55px 0 13px}
