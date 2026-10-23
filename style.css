@@ -11,7 +11,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--link);outline-offse
 .topbar{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:35px 0 18px}
 .brand{font:16px 'Libre Baskerville',Georgia,serif;color:var(--text)}
 .nav{display:flex;align-items:center;gap:23px}
-.nav a{font-size:14px;color:var(--muted)}
+.nav a{font-size:14px;font-weight:600;color:var(--muted)}
 .nav a[aria-current=page]{color:var(--link);text-decoration:underline;text-underline-offset:6px}
 .theme-switch{display:inline-flex;align-items:center;gap:3px;border:1px solid var(--line);border-radius:99px;padding:4px;background:var(--bg)}
 .theme-switch button{border:0;background:transparent;color:var(--muted);width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:17px;line-height:1;display:inline-flex;align-items:center;justify-content:center}
@@ -29,11 +29,11 @@ h3{font-size:18px;margin:0 0 6px}
 .entry{padding:0 0 22px;margin-bottom:23px;border-bottom:1px solid var(--line)}
 .entry p{margin:4px 0 9px;color:var(--muted);font-size:16px}
 .entry a{font-weight:600;font-size:14px}
-.entry h3{font-weight:700}
+.entry h3{font-weight:700}.entry h3 a{font-weight:700}
 .section{margin:42px 0 75px}
 .project{padding:22px 0 30px;border-top:1px solid var(--line)}
 .project-header{display:flex;justify-content:space-between;gap:20px}
-.project h2{margin:0;font-size:22px;font-weight:700}
+.project h2{margin:0;font-size:22px;font-weight:700}.project h2 a{font-weight:700}
 .project p{max-width:720px;margin:8px 0 12px;font-size:16px}
 .tags{font-size:13px;color:var(--muted)}
 .tags span{margin-right:15px}
